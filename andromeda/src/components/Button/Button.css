@@ -1,0 +1,16 @@
+.btn {
+    background-color: blue;
+    color: white;
+    display: block;
+    border: none;
+    height: 32px;
+    width: 80px;
+    border-radius: 16px;
+    padding-inline: 8px;
+    /* margin-bottom: 10px; */
+    cursor: pointer;
+
+    &:hover {
+        background-color: green;
+    }
+}

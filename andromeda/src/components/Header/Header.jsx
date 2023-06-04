@@ -1,6 +1,13 @@
 import TombolLogin from "../Button/Button";
+import "./Header.css";
 
 const Header = () => {
+    const isLoggedIn = true;
+
+    const handleClick = () => {
+        alert("Boo")
+    }
+
     return (
         <header>
             <div>
@@ -19,9 +26,14 @@ const Header = () => {
                     </li>
                 </ul>
             </div>
-            <div>
+            {isLoggedIn ? (
+                <>
+                <h1>Faisal</h1>
+                <TombolLogin name="LOG OUT" onClick={handleClick}/>
+                </>
+            ) : (
                 <TombolLogin name="LOGIN" />
-            </div>
+            )}
         </header>
     );
 };
