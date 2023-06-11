@@ -1,0 +1,25 @@
+.about-wrapper {
+    > img {
+        width: 100%;
+        height: 800px;
+        object-fit: cover;
+        object-position: 50% 30%;
+        margin-bottom: 20px;
+    }
+
+    > .about-page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        > h3 {
+            margin-bottom: 20px;
+            font-size: 50px;
+        }
+
+        > p {
+            font-size: large;
+            margin-bottom: 50px;
+        }
+    }
+}

@@ -1,9 +1,13 @@
+import { useNavigate } from "react-router-dom";
 import Button from "../Button/Button";
 
 // Header CSS
 import './Header.css'
 
 const Header = () => {
+    
+    const navigate = useNavigate();
+
     return (
         <header>
             <div>
@@ -11,9 +15,9 @@ const Header = () => {
             </div>
             <div>
                 <ul>
-                    <li>Home</li>
-                    <li>Cast</li>
-                    <li>About</li>
+                    <li onClick={() => navigate('/')}>Home</li>
+                    <li onClick={() => navigate('/cast')}>Cast</li>
+                    <li onClick={() => navigate('/about')}>About</li>
                     <li>
                         <Button title="LOG IN" />
                     </li>

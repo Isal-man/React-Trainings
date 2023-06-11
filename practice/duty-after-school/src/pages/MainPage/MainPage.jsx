@@ -1,14 +1,18 @@
+import { Outlet } from "react-router-dom";
 import { Header } from "../../components";
-import Cast from "../Cast/Cast";
 
-import './MainPage.css'
+import "./MainPage.css";
 
 const MainPage = () => {
     return (
-        <>
-            <Header />
-            <Cast />
-        </>
+        <div className="mainpage-wrapper">
+            <div className="header-wrapper">
+                <Header />
+            </div>
+            <div className="content-wrapper">
+                <Outlet />
+            </div>
+        </div>
     );
 };
 

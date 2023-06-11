@@ -5,13 +5,11 @@ const Routing = () => {
     return (
         <BrowserRouter>
             <Routes>
-                {
                     <Route path="/" element={<MainPage />}>
                         <Route index element={<Home />} />
                         <Route path="/cast" element={<Cast />} />
                         <Route path="/about" element={<About />} />
                     </Route>
-                }
             </Routes>
         </BrowserRouter>
     );
